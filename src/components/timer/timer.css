@@ -6,3 +6,7 @@
   text-align: center;
   width: 400px;
 }
+.timer-holder{
+    display: flex;
+    flex-direction: column;
+}
