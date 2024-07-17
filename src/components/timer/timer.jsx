@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import timerSound from './src/components/imer/timer.mp3'
 import './timer.css';
 
 export function Timer({ secondsGiven }) {
@@ -6,7 +7,7 @@ export function Timer({ secondsGiven }) {
 
   useEffect(() => {
     if (timeRemaining <= 0) {
-      const alarm = new Audio('./timer.mp3'); 
+      const alarm = new Audio(timerSound); 
       alarm.play();
       return;
     }
