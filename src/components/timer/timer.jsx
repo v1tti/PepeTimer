@@ -6,7 +6,7 @@ export function Timer({ secondsGiven }) {
 
   useEffect(() => {
     if (timeRemaining <= 0) {
-      const alarm = new Audio('./src/components/timer/timer.mp3'); 
+      const alarm = new Audio('./timer.mp3'); 
       alarm.play();
       return;
     }
