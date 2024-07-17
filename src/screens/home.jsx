@@ -38,7 +38,10 @@ export function Home() {
       )}
       {timerScore !== 0 && (
         <>
-          <div>Timer disponível: {(timerScore / 60).toFixed(2)} minuto(s)</div>
+          <div>
+            Timer disponível: {Math.floor(timerScore / 60)} minuto(s) e{" "}
+            {timerScore % 60}
+          </div>
           {!startTimer && (
             <div>
               <button type="button" onClick={handleStartTimer}>

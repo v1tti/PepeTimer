@@ -37,9 +37,9 @@ function Dino({ shouldRender, setShouldRender, setTimerScore }) {
       if (cactusLeft < 40 && cactusLeft > 0 && dinoTop >= 140) {
         // collision
         alert(
-          `Score do seu timer: ${score}\nIsso permite um timer de: ${(
+          `Score do seu timer: ${score}\nIsso permite um timer de: ${Math.floor(
             score / 60
-          ).toFixed(2)} minuto(s)`
+          )} minuto(s) e ${score % 60} segundos`
         );
         setTimerScore(score);
         setScore(0);
