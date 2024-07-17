@@ -3,7 +3,7 @@ import timerSound from './timer.mp3'
 import './timer.css';
 
 export function Timer({ secondsGiven }) {
-  const [timeRemaining, setTimeRemaining] = useState(3);
+  const [timeRemaining, setTimeRemaining] = useState(secondsGiven);
 
   useEffect(() => {
     if (timeRemaining <= 0) {
