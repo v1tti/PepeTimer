@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import timerSound from './src/components/imer/timer.mp3'
+import timerSound from './timer.mp3'
 import './timer.css';
 
 export function Timer({ secondsGiven }) {
-  const [timeRemaining, setTimeRemaining] = useState(secondsGiven);
+  const [timeRemaining, setTimeRemaining] = useState(3);
 
   useEffect(() => {
     if (timeRemaining <= 0) {
