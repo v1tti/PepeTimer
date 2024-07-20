@@ -40,7 +40,7 @@ export function Home() {
         <>
           <div>
             Timer disponível: {Math.floor(timerScore / 60)} minuto(s) e{" "}
-            {timerScore % 60}
+            {timerScore % 60} segundos
           </div>
           {!startTimer && (
             <div>
